@@ -49,7 +49,21 @@
     <section class="effect-solving">
 
         <h1 class="title-h1">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="btn">Заказать услугу</button>
+        <button class="btn" data-modal-open>Заказать услугу</button>
+
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis,
+                    ex. Iste, totam reiciendis,
+                    molestias maiores consequatur ut voluptatibus rerum iusto,
+                    facere maxime dolorem suscipit molestiae
+                    est ullam! Neque, vitae consectetur.
+                </p>
+                <button data-modal-close>Закрыть</button>
+            </div>
+
+        </div>
 
     </section>
 
@@ -403,6 +417,7 @@
             </div>
         </nav>
     </footer>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
