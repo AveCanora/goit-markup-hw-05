@@ -169,7 +169,10 @@ box-sizing: inherit;
     
 }
 .portfolio-header {
-    border: 1px solid #ECECEC;
+    border: none; /* Убираем границу */
+    background-color:#ECECEC; /* Цвет линии */
+    color: #ECECEC; /* Цвет линии для IE6-7 */
+    height: 1px; /* Толщина линии */
     margin: 0px;
 }
 
@@ -190,6 +193,15 @@ box-sizing: inherit;
 /* текущая страница - голубого цвета пункт меню*/
 .link.current {
 color: var(--accent-cl);
+}
+.link.current::after{
+    position: relative;
+    top: 32px;
+    content: "";
+    display: block;
+    height: 4px;
+    background: #2196F3;
+    border-radius: 2px;
 }
 
 
@@ -303,7 +315,8 @@ img{
     font-size: 16px;
     line-height: 1.188;
     letter-spacing: 0.03em;
-    color: var(--h-color)
+    color: var(--h-color);
+    padding-top: 20px;
 }
 .p-position {
     font-style: normal;
@@ -414,10 +427,10 @@ img{
     display: flex;
     justify-content: center;
     align-items: center;
-   width: 44px;
-   height: 44px;
-   background-color:var(--white); 
-   border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    background-color:var(--white); 
+    border-radius: 50%;
   
 }
 
@@ -488,8 +501,13 @@ img{
 }
 .team-li {
     
-    box-shadow: 0px 2px 4px 0px var(--gray);
+    /* box-shadow: 0px 2px 4px 0px var(--gray); */
     background-color: white;
+    height: 428px;
+
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
 }
 
 .site-nav .link {
@@ -724,9 +742,7 @@ img{
     height: 44px;
     background-color:var(--bg-icon); 
     border-radius: 50%;
-  
 }
-
 
 .join-icon-svg{
     
@@ -745,6 +761,8 @@ img{
     display: flex;
     align-items: baseline;
 }
+
+
 .backdrop.is-hidden{
     visibility: hidden;
     opacity: 0;
@@ -763,10 +781,17 @@ img{
 
 }
 .modal{
-
-
-    width: 200px;
-    height: 200px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 528px;
+    height: 581px;
     background-color: var(--white);
     border-radius: 4px;
+}
+.modal-font{
+    padding:30px;
+    font-weight: 700;
+    color: #2196F3;
 }
