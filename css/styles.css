@@ -805,10 +805,9 @@ img{
     background-repeat: no-repeat;
     background-position:right;
     background-color:var(--white);
+    background-image: url(../img/close.svg);
 }
-.icon-close::before{
-    background-image: url(../img/close.svg); 
-}
+
 
 .modal-font{
     padding:30px;
