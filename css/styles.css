@@ -797,7 +797,7 @@ img{
     border-radius: 4px;
     transform: translate(-50%,-50%) scale(1);
 }
-.modal::before{
+/* .modal::before{
     content: "";
     display: block;
 
@@ -806,8 +806,20 @@ img{
     background-position:right;
     background-color:var(--white);
     background-image: url(../img/close.svg);
-}
+} */
+.btn-close {
+    display: inline-block;
+    position: absolute;
+    top:8px;
+  
+    left:  491px;
+    width: 30px;
+    height: 30px;
 
+    background-image: url(../img/close.svg); 
+    border: none;
+    background-color: var(--white);
+}
 
 .modal-font{
     padding:30px;
@@ -862,3 +874,4 @@ img{
 .hover:hover .animation-overlay{
     transform:translateY(0);  
 }
+
