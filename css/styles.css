@@ -882,7 +882,7 @@ img{
 
 .title-img{
  
-    display: block;
+    display: flex;
     position: relative; 
     width: 370px;
     height: 70px;
@@ -894,7 +894,7 @@ img{
     bottom: 70px;
     
     text-align: center;
-    padding: 30px;
+   
   
     font-weight: bold;
     font-size: 14px;
